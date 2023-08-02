@@ -1,0 +1,24 @@
+						Résulta de l'exercice1
+
+Voici un exemple d'algorithme en langage Python qui demande à l'utilisateur un nombre compris entre 1 et 3 jusqu'à ce que la réponse convienne :
+
+nombre = 0
+
+while nombre < 1 or nombre > 3:
+    nombre = int(input("Veuillez entrer un nombre entre 1 et 3 : "))
+
+print("Nombre valide : ", nombre)
+
+Explication de l'algorithme :
+
+1. Nous initialisons la variable nombre à 0 pour entrer dans la boucle while.
+
+2. La boucle while vérifie si nombre est inférieur à 1 ou supérieur à 3. Si c'est le cas, elle demande à l'utilisateur d'entrer un nombre entre 1 et 3.
+
+3. L'utilisateur entre sa réponse à l'aide de la fonction input(). La fonction int() est utilisée pour convertir la réponse en entier.
+
+4. Si la réponse de l'utilisateur est valide (c'est-à-dire comprise entre 1 et 3 inclus), la boucle while se termine.
+
+5. Enfin, l'algorithme affiche le nombre valide.
+
+L'algorithme continuera à demander à l'utilisateur d'entrer un nombre jusqu'à ce qu'une réponse valide soit donnée.
