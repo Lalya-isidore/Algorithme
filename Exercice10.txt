@@ -1,0 +1,25 @@
+						Résultats de l'exercice 10
+Voici un exemple d'algorithme en langage Python qui permet de calculer les chances de gagner au tiercé, quarté, quinté et autres jeux de paris hippiques :
+
+nombre_partants = int(input("Entrez le nombre de chevaux partants : "))
+nombre_joues = int(input("Entrez le nombre de chevaux joués : "))
+
+# Calcul des chances dans l'ordre
+chances_ordre = 1 / (nombre_partants * (nombre_partants - 1) * (nombre_partants - 2))
+print("Dans l'ordre : une chance sur", int(1 / chances_ordre), "de gagner")
+
+# Calcul des chances dans le désordre
+chances_desordre = 1 / (nombre_partants * (nombre_partants - 1) * (nombre_partants - 2) * ... * (nombre_partants - nombre_joues + 1))
+print("Dans le désordre : une chance sur", int(1 / chances_desordre), "de gagner")
+
+Explication de l'algorithme :
+
+1. L'algorithme demande à l'utilisateur d'entrer le nombre de chevaux partants (total de chevaux dans la course) et le nombre de chevaux joués par le joueur.
+
+2. En utilisant la formule mathématique appropriée, l'algorithme calcule les chances de gagner dans l'ordre en divisant 1 par le produit des nombres décroissants de chevaux partants (nombre_partants), moins 1 à chaque fois, jusqu'à nombre_partants - nombre_joues + 1.
+
+3. Les chances de gagner dans l'ordre sont affichées en utilisant la phrase "Dans l'ordre : une chance sur X de gagner", où X est le résultat de 1 divisé par les chances calculées.
+
+4. Ensuite, l'algorithme calcule les chances de gagner dans le désordre en utilisant la même formule que précédemment, mais en multipliant également par le nombre de chevaux joués (nombre_joues).
+
+5. Les chances de gagner dans le désordre sont affichées en utilisant la phrase "Dans le désordre : une chance sur Y de gagner", où Y est le résultat
