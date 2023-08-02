@@ -1,0 +1,26 @@
+						Résultat de l'exercice 9
+L'algorithme fourni est un exemple de pseudo-code qui calcule la somme due, gère le paiement et simule la remise de la monnaie en affichant les coupures de chaque sorte. Il suit les étapes suivantes :
+
+1. Initialise la variable sommeDue à 0.
+2. Lit le prix.
+3. Tant que le prix est différent de 0 :
+   - Ajoute le prix à la sommeDue.
+   - Lit le prix.
+4. Affiche "La somme due est de [sommeDue] euros."
+5. Affiche "Veuillez saisir la somme payée : "
+6. Lit la sommePayee.
+7. Calcule le reste en soustrayant sommePayee - sommeDue.
+8. Si le reste est supérieur ou égal à 10 :
+   - Calcule le nombre de coupures de 10 euros nécessaires (coupures10 = reste / 10).
+   - Affiche "Coupures de 10 euros : [coupures10]".
+   - Met à jour le reste (reste = reste % 10).
+9. Si le reste est supérieur ou égal à 5 :
+   - Calcule le nombre de coupures de 5 euros nécessaires (coupures5 = reste / 5).
+   - Affiche "Coupures de 5 euros : [coupures5]".
+   - Met à jour le reste (reste = reste % 5).
+10. Si le reste est supérieur ou égal à 1 :
+    - Calcule le nombre de coupures de 1 euro nécessaires (coupures1 = reste).
+    - Affiche "Coupures de 1 euro : [coupures1]".
+11. Fin de l'algorithme.
+
+N'oubliez pas que le pseudo-code est une représentation simplifiée de l'algorithme et ne correspond pas à un langage de programmation spécifique. Pour l'implémenter dans un langage de programmation réel, vous devrez adapter la syntaxe en fonction du langage que vous utilisez.
