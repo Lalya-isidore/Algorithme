@@ -1,0 +1,25 @@
+						Résultat de l'exercice 6
+
+Voici un exemple d'algorithme en langage Python qui demande à l'utilisateur un nombre de départ et calcule la somme des entiers jusqu'à ce nombre :
+
+nombre_depart = int(input("Veuillez entrer un nombre de départ : "))
+
+somme = 0
+for i in range(1, nombre_depart + 1):
+    somme += i
+
+print("La somme des entiers jusqu'à", nombre_depart, "est :", somme)
+
+Explication de l'algorithme :
+
+1. L'algorithme demande à l'utilisateur d'entrer un nombre de départ à l'aide de la fonction input(). La réponse est ensuite convertie en entier à l'aide de la fonction int().
+
+2. Une variable somme est initialisée à zéro pour stocker la somme des entiers.
+
+3. Utilisant une boucle for, nous parcourons les nombres de 1 à nombre_depart inclus. La boucle utilise la fonction range(1, nombre_depart + 1) pour générer les valeurs allant de 1 à nombre_depart.
+
+4. À chaque itération de la boucle, la valeur de i est ajoutée à la variable somme en utilisant l'opérateur d'addition +=. Cela permet de calculer progressivement la somme des entiers.
+
+5. En utilisant la fonction print(), l'algorithme affiche le résultat de la somme en indiquant le nombre de départ saisi par l'utilisateur.
+
+L'algorithme demandera à l'utilisateur un nombre de départ, puis calculera la somme des entiers de 1 à ce nombre. Par exemple, si l'utilisateur entre le nombre 5, le programme affichera "La somme des entiers jusqu'à 5 est : 15", car la somme des entiers de 1 à 5 est égale à 15.
