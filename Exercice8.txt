@@ -1,0 +1,34 @@
+						Résultas exerice 8
+Voici un exemple d'algorithme en langage Python qui demande successivement 20 nombres à l'utilisateur, puis affiche le plus grand nombre parmi ces 20 :
+
+nombres = []
+for i in range(20):
+    nombre = int(input("Entrez le nombre numéro " + str(i + 1) + ": "))
+    nombres.append(nombre)
+
+plus_grand = max(nombres)
+print("Le plus grand de ces nombres est :", plus_grand)
+
+Explication de l'algorithme :
+
+1. Nous utilisons une boucle for pour itérer 20 fois et demander à l'utilisateur d'entrer un nombre à chaque itération. La boucle utilise range(20) pour générer les nombres de 0 à 19, et nous ajoutons 1 pour obtenir les numéros de 1 à 20.
+
+2. À chaque itération, le nombre saisi par l'utilisateur est converti en entier à l'aide de int() et ajouté à la liste nombres à l'aide de la méthode append().
+
+3. Après avoir obtenu les 20 nombres, la fonction max() est utilisée pour trouver le plus grand nombre dans la liste nombres.
+
+4. En utilisant la fonction print(), l'algorithme affiche le plus grand nombre parmi les nombres saisis.
+
+Maintenant, voici une modification de l'algorithme pour afficher également la position à laquelle le plus grand nombre a été saisi :
+
+nombres = []
+for i in range(20):
+    nombre = int(input("Entrez le nombre numéro " + str(i + 1) + ": "))
+    nombres.append(nombre)
+
+plus_grand = max(nombres)
+position = nombres.index(plus_grand) + 1
+print("Le plus grand de ces nombres est :", plus_grand)
+print("C'était le nombre numéro", position)
+
+Après avoir trouvé le plus grand nombre avec max(), nous utilisons la méthode index() de la liste nombres pour trouver la position (l'index) à laquelle le plus grand nombre se trouve. Nous ajoutons 1 à l'index pour obtenir le numéro correspondant à la position. Ensuite, nous affichons le résultat avec une deuxième instruction print()
