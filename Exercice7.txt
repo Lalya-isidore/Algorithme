@@ -1,0 +1,24 @@
+						Résultat de l'exercice7
+Voici un exemple d'algorithme en langage Python qui demande à l'utilisateur un nombre de départ et calcule le factoriel de ce nombre :
+
+nombre_depart = int(input("Veuillez entrer un nombre de départ : "))
+
+factoriel = 1
+for i in range(1, nombre_depart + 1):
+    factoriel *= i
+
+print("Le factoriel de", nombre_depart, "est :", factoriel)
+
+Explication de l'algorithme :
+
+1. L'algorithme demande à l'utilisateur d'entrer un nombre de départ à l'aide de la fonction input(). La réponse est ensuite convertie en entier à l'aide de la fonction int().
+
+2. Une variable factoriel est initialisée à 1 pour stocker le résultat du factoriel.
+
+3. Utilisant une boucle for, nous parcourons les nombres de 1 à nombre_depart inclus. La boucle utilise la fonction range(1, nombre_depart + 1) pour générer les valeurs allant de 1 à nombre_depart.
+
+4. À chaque itération de la boucle, la valeur de i est multipliée à la variable factoriel en utilisant l'opérateur de multiplication *=. Cela permet de calculer progressivement le factoriel en multipliant les nombres.
+
+5. En utilisant la fonction print(), l'algorithme affiche le résultat du factoriel en indiquant le nombre de départ saisi par l'utilisateur.
+
+L'algorithme demandera à l'utilisateur un nombre de départ, puis calculera le factoriel de ce nombre. Par exemple, si l'utilisateur entre le nombre 8, le programme affichera "Le factoriel de 8 est : 40320", car le factoriel de 8 est égal à 1x2x3x4x5x6x7x8, soit 40320.
