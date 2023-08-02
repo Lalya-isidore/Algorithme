@@ -1,0 +1,18 @@
+						Résultat de l'exercice 4
+
+Voici un exemple d'algorithme en langage Python qui demande à l'utilisateur un nombre de départ et affiche les dix nombres suivants en utilisant la syntaxe for :
+
+nombre_depart = int(input("Veuillez entrer un nombre de départ : "))
+
+for i in range(nombre_depart + 1, nombre_depart + 11):
+    print(i)
+
+Explication de l'algorithme :
+
+1. L'algorithme demande à l'utilisateur d'entrer un nombre de départ à l'aide de la fonction input(). La réponse est ensuite convertie en entier à l'aide de la fonction int().
+
+2. Utilisant une boucle for avec la syntaxe range(), nous parcourons les dix nombres suivants. La boucle commence à nombre_depart + 1 (le nombre suivant le nombre de départ) et se termine à nombre_depart + 11 (le onzième nombre suivant).
+
+3. À chaque itération de la boucle, le nombre est affiché à l'aide de la fonction print().
+
+L'algorithme demandera à l'utilisateur un nombre de départ, puis affichera les dix nombres suivants, en commençant par le nombre suivant et en allant jusqu'au nombre suivant + 10. Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.
