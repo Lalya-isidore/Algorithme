@@ -1,0 +1,24 @@
+				Résultat de l'exercice 5
+
+Voici un exemple d'algorithme en langage Python qui demande à l'utilisateur un nombre de départ et affiche la table de multiplication de ce nombre :
+
+nombre_depart = int(input("Veuillez entrer un nombre de départ : "))
+
+print(f"Table de {nombre_depart}:")
+for i in range(1, 11):
+    resultat = nombre_depart * i
+    print(f"{nombre_depart}x{i}={resultat}")
+
+Explication de l'algorithme :
+
+1. L'algorithme demande à l'utilisateur d'entrer un nombre de départ à l'aide de la fonction input(). La réponse est ensuite convertie en entier à l'aide de la fonction int().
+
+2. En utilisant la fonction print(), l'algorithme affiche le titre de la table de multiplication correspondant au nombre de départ saisi.
+
+3. Utilisant une boucle for, nous parcourons les nombres de 1 à 10 inclus. La boucle utilise la fonction range(1, 11) pour générer les valeurs de 1 à 10.
+
+4. À chaque itération de la boucle, le résultat de la multiplication entre le nombre de départ et le nombre de l'itération est calculé et stocké dans la variable resultat.
+
+5. En utilisant la fonction print(), l'algorithme affiche chaque ligne de la table de multiplication au format "nombre de départ x nombre d'itération = résultat".
+
+L'algorithme demandera à l'utilisateur un nombre de départ, puis affichera la table de multiplication de ce nombre, en allant de 1 à 10. Par exemple, si l'utilisateur entre le nombre 7, le programme affichera la table de multiplication de 7 comme indiqué dans l'exemple fourni.
